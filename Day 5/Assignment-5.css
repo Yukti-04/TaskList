@@ -8,12 +8,14 @@
     background-image: url("https://www.eventstodayz.com/wp-content/uploads/2017/08/Night-City-wallpapers.jpg");
     position: relative;
     overflow: hidden;
+    background-repeat: repeat-x;
     background-size: cover;
 }
 
 .highway img{
     width: 300%;
     position: absolute;
+    background-repeat: repeat-x;
     bottom: 0;
     left: 0;
     right: 0;
@@ -22,7 +24,7 @@
 }
 @keyframes highway {
     100%{
-        transform: translateX(-10%);
+        transform: translateX(-30%);
     }
 }
 .car img{
