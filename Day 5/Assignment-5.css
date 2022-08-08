@@ -11,9 +11,8 @@
     background-size: cover;
 }
 
-.highway {
+.highway img{
     width: 300%;
-    background-image: url("https://lh3.googleusercontent.com/dyNM-74ST7OOKQdWWp5Zit7aS0e9fVSrx5dNQUzi4f6Xkk_lJVK5OAgJzb2rU-ruFU4WmaheFGaS7Xg=w1920-h1007");
     position: absolute;
     bottom: 0;
     left: 0;
