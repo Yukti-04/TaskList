@@ -54,12 +54,13 @@ a:hover{
 }
 #About{
     background-image: url("https://www.wallpaperflare.com/static/764/665/82/nikon-d5-camera-dslr-digital-wallpaper.jpg");
-    height: 105vh;
-    background-size: 70%;
+    height: 100%;
+    background-size: cover;
+    padding-bottom: 10px; 
 }
 .information{
     border: 2px solid white;
-    height: 77vh;
+    height: auto;
     font-family: 'Markazi Text', serif;
     color: white;
     font-size: 33px;
@@ -73,7 +74,7 @@ a:hover{
     background-size: cover;
     padding: 20px;
     text-align: center;
-    height: 100vh;
+    height: auto;
 }
 #Cameras h2{
     font-size: 90px;
@@ -82,9 +83,9 @@ a:hover{
 #card{
     background-color: black;
     width: 20%;
-    height: 650px;
-    padding: 10px;
-    border-radius: 20px;
+    height: auto;
+    padding: 1%;
+    border-radius: 5%;
 }
 #caption{
     align-items: center;
@@ -93,6 +94,11 @@ a:hover{
     padding: 20px;
     font-family: 'Tapestry', cursive;
     font-size: 20px;
+    height: auto;
+}
+#cardImg{
+    height: auto;
+    width: 20%;
 }
 #caption h3{
     font-size: 40px;
@@ -105,6 +111,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: auto;
 }
 #Components{
     background-image: url("https://iso.500px.com/wp-content/uploads/2016/10/stock-photo-159358357.jpg");
@@ -112,11 +119,13 @@ a:hover{
     height: 99vh;
     background-size: cover;
     padding: 20px;
+    height: auto;
 }
 #compContainer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    height: auto;
 }
 #Components h1{
     color: black;
@@ -134,6 +143,7 @@ a:hover{
     background-color: rgb(0,0,0,0.9);
     border-radius: 20px;
     font-family: 'Markazi Text', serif;
+    height: auto;
 }
 #aside{
     width: 48%;
@@ -142,7 +152,7 @@ a:hover{
     font-size: 35px; 
     background-color: rgb(0,0,0,0.9);
     border-radius: 20px;
-    height: 700px;
+    height: auto;
     font-family: 'Markazi Text', serif;
 }
 .div1{
@@ -151,17 +161,18 @@ a:hover{
     text-align: center;
     border-radius: 5px;
     margin: 2px;
+    height: auto;
 }
 #TopPhoto{
     background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Sony-camera-backgrounds-1920x1080.jpg");
-    background-size: 80%;
+    background-size: cover;
     padding: 20px;
     text-align: center;
-    height: 75vh;
+    height: auto;
 }
 #TopPhoto h2{
     font-size: 50px;
-    padding-top: 3vh;
+    padding-top: 3%;
     color: white;
     font-family: 'Tapestry', cursive;
     padding-bottom: 20px;
@@ -169,7 +180,7 @@ a:hover{
 #TopPhoto #card{
     background-color: black;
     width: 20%;
-    height: 600px;
+    height: auto;
     padding: 10px;
     border-radius: 20px;
     border: 2px double white;
@@ -193,7 +204,7 @@ a:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    height: auto;
 }
 #fixedbutton {
     position: fixed;
@@ -217,7 +228,7 @@ a:hover{
    display: flex;
    justify-content:center;
    align-items:center;
-   height: 5vh;
+   height: 20%;
    font-family: 'Charm', cursive;
    width: 100%;
 }
@@ -225,9 +236,10 @@ a:hover{
     color: yellow;
 }
 .sources a{
-    width: 50%;
+    width: 100%;
     padding: 20px 20px;
     font-size: 30px;
+    height: auto;
     text-decoration: none;
     font-family: 'Tapestry', cursive;
 }
