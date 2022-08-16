@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Question 1</title>
+    <style>
+        body{
+            background-image: url("https://wallpapercave.com/wp/wp2757896.gif");
+            background-size: cover;
+            color: white;
+            text-align: right;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a JavaScript program to create a new string from a given string taking first 3 characters and the last 3 characters of a string and add them together. The string length must be 3 or more. If not, return the original string is returned.  (Use Functional Approach)</h1><br>
+    <script>
+        function display(alpha){     
+            var a=alpha; 
+            if(alpha.length <= 3)
+            {
+                return "String is: " + a+ " String length is: "+alpha.length+" so the result is: "+alpha;
+            }
+            else{
+                var front=alpha.substr(0,3);
+                var back=alpha.substr(alpha.length - 3);
+                return "String is: " + a+ " String length is: "+alpha.length+" which is greater than so the result is: "+(front+back)+" start three characters: "+front+" and last three characters are: "+back;
+            }
+        }
+        document.write('<h2 style="color: greenyellow;"> '+display("HelloWorld123")+'</h2>');
+        document.write('<h2 style="color: greenyellow;">'+display("age")+'</h2>');
+    </script>
+</body>
+</html>

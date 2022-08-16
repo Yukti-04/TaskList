@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Question 1</title>
+    <style>
+        body{
+            background-image: url("https://wallpapercave.com/wp/wp2757852.gif");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a JavaScript program to create a new string adding "New!" in front of a given String. If the given string begins with "New!" already then return the original string. (Use Functional Approach).</h1><br>
+    <script>
+        function display(alpha){
+            a="New! ";
+            document.write("Original string: "+alpha);
+            var b=alpha.substr(0, 4);
+            if(b == "New!")
+            {
+                return 'When sentence has New keyword: '+alpha;
+            }
+            
+            else{
+                return "When sentence does not have New keyword: "+a+alpha;
+            }
+        }
+        document.write('<h2 style="color: orange;"> '+display("New! age")+'</h2>');
+        document.write('<h2 style="color: yellow;">'+display("age")+'</h2>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 8 Question 1</title>
+    <style>
+        body{
+            background-image: url("https://i.pinimg.com/originals/7a/9c/47/7a9c4710dc00f24636d89b8883b6f854.gif");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a Program to return more than one value from a Function.</h1>
+    <script>
+        function add(a,b){
+            var sum=0;
+            sum=a+b;
+            return "The Sum of " + a + " and " + b + " is: " + sum;
+        }
+        document.write('<h2 style="color: blue;">'+add(2,3)+'</h2>');
+        document.write('<h2 style="color: blue;">'+add("Hello","World!")+'</h2>');
+    </script>
+</body>
+</html>
