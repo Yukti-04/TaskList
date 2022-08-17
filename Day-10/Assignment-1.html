@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 Question 1</title>
+    <style>
+        body{
+            background-image: url("https://cdn.wallpapersafari.com/38/4/XKB6mr.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a Program to use call() and apply() Method.</h1>
+    <script>
+        var obj={
+            a:5,
+            b:6,
+            result: function() {
+                return this.a+this.b;
+            },
+        };
+        var obj2={
+            a:5,
+            b:6,
+            result: function(c,d) {
+                return this.a+this.b+c+d;
+            },
+        };
+        var numbers={
+            a:11,
+            b:15,
+        };
+        var numbers1={
+            a:7,
+            b:8,
+        }
+        document.write('<h2 style="color: blue;"> CALL() : '+obj.result.call(numbers)+'</h2>');
+        document.write('<h2 style="color: blue;">APPLY() : '+obj2.result.apply(numbers1,["Hello","World"])+'</h2>');
+    </script>
+</body>
+</html>

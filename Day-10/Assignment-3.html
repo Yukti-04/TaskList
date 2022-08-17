@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 Question 3</title>
+    <style>
+        body{
+            background-image: url("https://www.teahub.io/photos/full/29-291628_depression-quotes-on-life.jpg");
+            background-size: cover;
+            color: white;
+            text-align: left;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a Program to call a function in an interval of 3 sec for 5 times.</h1>
+    <script>
+        alert("This will call a function in an interval of 3 sec for 5 times.")
+       
+        var flag  = 0;
+        function callback()
+        {
+            console.log("hello");
+            flag++;
+            if(flag == 5) clearInterval(int1);
+            document.write('<p style="color: blue; font-size: 50px; font-weight: bold; font-family: cursive'>" Hello!!' +'<br>' + '</p>') ;
+        }
+        var int1 = setInterval(callback,3000);
+        
+        
+    </script>
+</body>
+</html>

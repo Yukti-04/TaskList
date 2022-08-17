@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 Question 2</title>
+    <style>
+        body{
+            background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/08/Black-Wallpaper-HD-1920x1080-Free-Download.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a Program to iterate an Array of Objects using map function.</h1>
+    <script>
+        var people = [
+            { name: "Ashish", age: 23 },
+            { name: "Ajay", age: 21 },
+            { name: "Arvind", age: 26 },
+            { name: "Mahesh", age: 28 },
+            { name: "Jay", age: 19 },
+        ];
+        var age=people.map((i)=> i.age);
+        var names=people.map((i)=> i.name);
+        for(var i=0; i<people.length; i++){
+            document.write('<h2 style="color: blue;">Name: '+people[i].name+'</h2>');
+            document.write('<h2 style="color: red;">Age: '+people[i].age+'</h2>');
+        }
+    </script>
+</body>
+</html>
