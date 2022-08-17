@@ -6,27 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 10 Question 3</title>
     <style>
-        body{
-            background-image: url("https://www.teahub.io/photos/full/29-291628_depression-quotes-on-life.jpg");
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        #loading{
+            background-image: url("https://cdn.dribbble.com/users/4047034/screenshots/9176275/media/b40e0d6c115634a62ec51c9b68a16f3f.gif");
             background-size: cover;
             color: white;
             text-align: left;
             font-size: 60px;
+            height: 100vh;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold">Write a Program to call a function in an interval of 3 sec for 5 times.</h1>
+    <div id="loading"><h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold; padding: 60px;">Write a Program to call a function in an interval of 3 sec for 5 times.</h1></div>
     <script>
+        
         alert("This will call a function in an interval of 3 sec for 5 times.")
-       
         var flag  = 0;
         function callback()
         {
             console.log("hello");
             flag++;
             if(flag == 5) clearInterval(int1);
-            document.write('<p style="color: blue; font-size: 50px; font-weight: bold; font-family: cursive'>" Hello!!' +'<br>' + '</p>') ;
+            document.write('<p style="color: blue; font-size: 70px; font-weight: bold; font-family: cursive; text-align: center;background-color:black;"> Hello!!' +'<br>' + '</p>') ;
         }
         var int1 = setInterval(callback,3000);
         

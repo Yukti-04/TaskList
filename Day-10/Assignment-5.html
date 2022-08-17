@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10 Question 5</title>
+    <style>
+        body{
+            background-image: url("https://cdn.wallpapersafari.com/78/20/trelAH.jpg");
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: white; font-size: 50px; font-weight: bold"> Write a Program to Filter out people whose age is less than 25 in descending order. </h1>
+    <script>
+        var people = [
+            { name: "Ashish", age: 23 },
+            { name: "Ajay", age: 21 },
+            { name: "Arvind", age: 30 },
+            { name: "Mahesh", age: 28 },
+            { name: "Jay", age: 19 },
+        ];
+        document.write("<p style='color: red;'>Names Before Filtering are:" + "<br>" +  "Ashish 23, Ajay 21, Arvind 26, Mahesh 28, Jay 19" + "<br>" + "</p>");
+        document.write('<p style="color: blue;">Names After Filtering are:' + '<br>' + '<br>' + '</p>');
+        
+        var filtered = people.filter((people) => people.age < 25);
+        console.log(filtered);
+        var fullName = filtered.map((u) => 
+        (
+            document.write("<p>" + u.name+ " "+ u.age+ "<br>"+ "</p>")
+        ));
+    </script>
+</body>
+</html>
