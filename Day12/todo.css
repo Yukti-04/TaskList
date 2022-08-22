@@ -1,0 +1,110 @@
+/* ------------Initial Phase CSS---------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("https://media.istockphoto.com/photos/hourglass-picture-id698740028?k=20&m=698740028&s=170667a&w=0&h=UHAJYKBQW1cciXIx47exGgXD-1sv3owm4-MR7bu9Lq8=");
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background-size: cover;
+  }
+  header,
+  form {
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    padding-right: 5%;
+    
+  }
+  header {
+    font-size: 100px;
+    font-family: 'Rubik Dirt', cursive;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px gold;
+    color: black;
+  }
+  
+  form input,
+  form button {
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: white;
+    box-shadow: 2px 2px 2px gold;
+
+  }
+  form button {
+    color: black;
+    background-color: gold;
+    cursor: pointer;
+    box-shadow: none;
+  }
+  form button:hover {
+    color: gold;
+    background-color: black;
+    box-shadow: 2px 2px 2px gold;
+  }
+  
+
+  /* ----------------New List Container----------------- */
+  
+
+  .todo-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 39%;
+}
+.todo-list{
+    list-style: none;
+    min-width:25%;
+}
+.tododiv
+{
+    background-color: white;
+    font-size: 24px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.tododiv li{
+    flex: 1;
+}
+.tododiv_check{
+    color: white;
+    background-color: teal;
+    border: none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+}
+.tododiv_end{
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 16px;
+    outline: none;
+    font-size: 16px;
+}
+.tododiv_item
+{
+    margin: 0px 10px;
+}
+
+.fa
+{
+    pointer-events: none;
+}
+.done{
+    text-decoration: line-through;
+    opacity: .5;
+}
