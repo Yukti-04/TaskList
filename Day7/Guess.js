@@ -19,3 +19,7 @@ if(guesses==0)
 {
     alert("You lost...The correct number was: "+num);
 }
+// npx node package executer
+//  single use ke liye
+// npm node package managar
+

@@ -9,8 +9,8 @@
 <body>
     <script>
         var day=new Date();
-var days=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-var date='0'+day.getDate()+'/0'+day.getMonth()+'/'+day.getFullYear();
+        var days=['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+var date=day.getDate()+'/0'+day.getMonth()+'/'+day.getFullYear();
 var display= document.createElement("p");
 const data = document.createTextNode("Assignment-1: Print the date in following Format:Today Date: 09/08/2022 Today Day: Tuesday.");
 display.appendChild(data);
