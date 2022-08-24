@@ -12,10 +12,13 @@
     <title>Form</title>
     <style>
               body{
-            background-image: url("https://wallpaperaccess.com/full/3124512.jpg");
+            
+            background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
+            background-size: cover;
             overflow: hidden;
         }
         *{
+          
             padding: 0%;
             margin: 0%;
             box-sizing: border-box;
@@ -91,8 +94,7 @@
         }
     
 #loader{
-    background-image: url("https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80");
-    width: 100%;
+        width: 100%;
     height: 100vh;
     display:flex;
     flex-direction: column;
@@ -158,84 +160,44 @@ p .dots{
         opacity: 5%;
     }
 }
+.animate-bottom {
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s;
+        background-image: url("https://wallpaperaccess.com/full/3124512.jpg");
+      }
 
-.wrapper{
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  animation: show_toast 1s ease forwards;
-}
-@keyframes show_toast {
-  0%{
-    transform: translateX(-100%);
-  }
-  40%{
-    transform: translateX(10%);
-  }
-  80%, 100%{
-    transform: translateX(20px);
-  }
-}
-.wrapper.hide{
-  animation: hide_toast 1s ease forwards;
-}
-@keyframes hide_toast {
-  0%{
-    transform: translateX(20px);
-  }
-  40%{
-    transform: translateX(10%);
-  }
-  80%, 100%{
-    opacity: 0;
-    pointer-events: none;
-    transform: translateX(-100%);
-  }
-}
-.wrapper .toast{
-  background: #fff;
-  padding: 20px 15px 20px 20px;
-  border-radius: 10px;
-  border-left: 5px solid #2ecc71;
-  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.wrapper .toast.offline{
-  border-color: #ccc;
-}
-.toast .content{
-  display: flex;
-  align-items: center;
-}
-.toast.offline .content .icon{
-  background: #2ecc71;
-}
-.toast .close-icon{
-  color: #878787;
-  font-size: 23px;
-  cursor: pointer;
-  height: 40px;
-  width: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  background: #2ecc71;
-  transition: all 0.3s ease;
-}
-.close-icon:hover{
-  background: #2ecc71;
-}
-    </style>
+      @-webkit-keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0px;
+          opacity: 1;
+        }
+      }
+
+      @keyframes animatebottom {
+        from {
+          bottom: -100px;
+          opacity: 0;
+        }
+        to {
+          bottom: 0;
+          opacity: 1;
+        }
+      }
+
+      #myDiv {
+        display: none;
+        text-align: center;
+      }
+          </style>
   </head>
-  <div class="wrapper">
-    <div class="toast">
-        <div class="icon"><i class="uil uil-wifi"></i></div>
-        <div class="close-icon"><i class="uil uil-times"></i></div>
-    </div>
-  </div>
   <body onload="myFunction()" style="margin: 0">
+    <button id="status" type="button" onclick="connection()"></button>
     <div id="loader">
         <div class="ball"></div>
         <div class="shadow"></div>
