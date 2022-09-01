@@ -11,13 +11,17 @@
 </head>
 <body>
     <h1>SLITHER</h1>
-    <canvas id="canvas" width="1500" height="800"></canvas>
+    <canvas id="canvas" width="1500" height="800">
+        <img src="https://png.pngtree.com/png-vector/20210522/ourmid/pngtree-apple-is-naturally-thirsty-and-healthy-png-image_3323218.jpg" id="apple">
+    </canvas>
     <audio controls hidden id="game">
         <source src="game.mp3" type="audio/mp3">
     </audio>
     <audio controls hidden id="gameOver">
         <source src="gameOver.wav" type="audio/mp3">
     </audio>
+    <span class="points">Your Points:- </span>
+    <span id="currentPoint" class="points">0</span>
     <script src="snakeGame.js"></script>
 </body>
 </html>

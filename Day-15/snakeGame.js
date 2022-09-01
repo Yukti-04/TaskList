@@ -2,6 +2,7 @@ let canvas = document.getElementById("canvas");
 const ctx=canvas.getContext("2d");
 let audio=document.getElementById("gameOver");
 let play=document.getElementById("game");
+let apple=document.getElementById("apple");
 let grid=20;
 var count=0;
 play.play();
@@ -32,7 +33,7 @@ function destroyed(){
     // length of the snake. grows when eating an apple
     maxCells: 4
   };
-  var apple = {
+  apple = {
     x: 320,
     y: 320
   };
@@ -120,5 +121,6 @@ function destroyed(){
       snake.dx = 0;
     }
   });
+  
   // start the game
   requestAnimationFrame(loop);
